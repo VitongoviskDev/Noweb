@@ -2,13 +2,12 @@ import React from 'react'
 
 import WebDesignImage from '../assets/images/image.png'
 import HeroSectionImage from '../assets/images/HeroSectionImage.jpg'
-import { MdArrowOutward } from 'react-icons/md'
 import Reviews from '../components/Reviews'
 import Link from '../components/Link'
 
 const HeroSection: React.FC = () => {
     return (
-        <section className='relative sm:bg-green-200 md:bg-green-400 lg:bg-green-600'>
+        <section className='relative'>
             <div className="absolute inset-0 bg-texture -z-1 opacity-[.06]"></div>
             <div className='flex justify-center items-center'>
                 <div className='gap-x-2 px-8 py-6 sm:px-12 sm:py-10 md:max-w-4xl lg:max-w-none'>
