@@ -1,8 +1,16 @@
 import React from 'react'
+import HeroSection from './sections/HeroSection'
 
 const App:React.FC = () => {
   return (
-    <div className='bg-gray-900 text-white' style={{fontFamily: 'gallery-modern'}}>DIgital Solution</div>
+    <div>
+      <header>
+
+      </header>
+      <main>
+        <HeroSection />
+      </main>
+    </div>
   )
 }
 
