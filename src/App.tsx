@@ -1,14 +1,16 @@
 import React from 'react'
 import HeroSection from './sections/HeroSection'
+import ColabSection from './sections/ColabSection'
 
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
-    <div>
+    <div style={{ fontFamily: 'DM Sans' }}>
       <header>
 
       </header>
       <main>
         <HeroSection />
+        <ColabSection />
       </main>
     </div>
   )
