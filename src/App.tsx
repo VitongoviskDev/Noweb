@@ -1,8 +1,8 @@
 import React from 'react'
 
-const App = () => {
+const App:React.FC = () => {
   return (
-    <div>App</div>
+    <div className='bg-gray-900'>App</div>
   )
 }
 
