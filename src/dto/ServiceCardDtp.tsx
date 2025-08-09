@@ -3,4 +3,5 @@ export interface ServiceCardDTO {
     title: string;
     icon: string;
     description: string;
+    highlighted: boolean;
 }

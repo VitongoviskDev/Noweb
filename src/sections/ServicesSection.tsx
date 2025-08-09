@@ -12,17 +12,20 @@ const ServiceCards: ServiceCardDTO[] = [
         topic: 'Visual Branding',
         title: "Web Design And Development",
         icon: Service1Image,
-        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate "
+        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate ",
+        highlighted: false
     },{
         topic: 'Brand Strategy',
         title: "Branding And Creative Services",
         icon: Service1Image,
-        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate "
+        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate ",
+        highlighted: true
     },{
         topic: 'Indentuty Build',
         title: "Creative Digital Agency",
         icon: Service1Image,
-        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate "
+        description: "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate ",
+        highlighted: false
     }
 ]
 
@@ -46,8 +49,8 @@ const ServicesSection: React.FC = () => {
                     <p className='text-gray-400'>Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers, </p>
                 </div>
             </div>
-            <div className='p-12 mt-12 border-t border-gray-300'>
-                <div className='flex items-center gap-2'>
+            <div className='py-12 mt-12 border-t border-gray-300'>
+                <div className='flex items-center justify-between gap-2'>
                     {
                         ServiceCards.map((service, index) => (
                             <ServiceCard key={index} service={service} />
