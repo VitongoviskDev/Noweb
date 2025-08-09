@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import video from "../assets/video/Insta_botira.mp4";
+import video from "../assets/video/video.mp4";
 
 const VideoSection: React.FC = () => {
     const [playing, setPlaying] = useState(false);
