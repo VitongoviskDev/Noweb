@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from './sections/HeroSection'
 import ColabSection from './sections/ColabSection'
 import ServicesSection from './sections/ServicesSection'
+import FunfacSection from './sections/FunfacSection'
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <HeroSection />
         <ColabSection />
         <ServicesSection />
+        <FunfacSection />
       </main>
     </div>
   )

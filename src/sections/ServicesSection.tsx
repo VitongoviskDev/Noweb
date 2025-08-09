@@ -34,7 +34,7 @@ const ServiceCards: ServiceCardDTO[] = [
 
 const ServicesSection: React.FC = () => {
     return (
-        <section className='relative flex flex-col justify-center items-center px-6 py-24 md:px-24'>
+        <section className='relative flex flex-col justify-center items-center px-6 pt-24 md:px-24'>
             <div className='absolute top-24 left-12 md:top-16 md:right-20 h-[4rem]'>
                 <img src={starImage} alt="starImage"
                     className='h-full object-contain' />
