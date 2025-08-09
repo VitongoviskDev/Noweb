@@ -17,6 +17,7 @@ const App: React.FC = () => {
         <ServicesSection />
         <FunfacSection />
         <VideoSection />
+        <FunfacSection />
       </main>
     </div>
   )
