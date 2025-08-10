@@ -5,11 +5,12 @@ import  { type DefaultProps } from '../util/DefaultProps'
 
 interface LinkProps extends DefaultProps{
     children: ReactNode;
+    url: string;
 }
 
-const Link:React.FC<LinkProps> = ({children, className}) => {
+const Link:React.FC<LinkProps> = ({children, url, className}) => {
     return (
-        <a href="/#Services" className={`flex text-[.4rem] font-semibold sm:text-[.6rem] lg:text-[1rem] border-b-1 ${className}`}>{children} <MdArrowOutward /></a>
+        <a href={url} className={`flex text-tiny sm:text-xs lg:text-base font-semibold  border-b-1 ${className}`}>{children} <MdArrowOutward /></a>
     )
 }
 

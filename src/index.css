@@ -23,13 +23,28 @@ html, body {
   --color-accent: #BFF747;
 
   --color-text: #000000;
+
+  --text-tiny: 0.625rem;
+  --text-tiny--line-height: 1.5rem; 
+  --text-tiny--letter-spacing: 0.125rem; 
+  --text-tiny--font-weight: 400;
+
+  --text-giant: 13rem;
+  --text-giant--line-height: 13rem; 
+  --text-giant--letter-spacing: 0; 
+  --text-giant--font-weight: 400;
+
+  --text-big: 10rem;
+  --text-big--line-height: 10rem; 
+  --text-big--letter-spacing: 0; 
+  --text-big--font-weight: 400;
 }
 
 @layer utilities {
   .bg-texture {
     background-image: url('./assets/images/HeroSectionTexture.png');
     background-repeat: repeat; /* para repetir a textura */
-    background-size: 40vw;     /* ou cover, contain, dependendo do efeito */
+    background-size: 30vw;     /* ou cover, contain, dependendo do efeito */
   }
 }
 

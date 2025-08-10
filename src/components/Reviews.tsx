@@ -8,7 +8,7 @@ import type { DefaultProps } from '../util/DefaultProps'
 const Reviews: React.FC<DefaultProps> = ({ className }) => {
 
     const ReviewImagesClass = 'w-full object-contain';
-    const ReviewImagesDivClass = 'flex justify-center items-center w-[18px] aspect-square bg-black rounded-full ring-1 ring-white overflow-hidden sm:w-[32px]';
+    const ReviewImagesDivClass = 'flex justify-center items-center w-[32px] aspect-square bg-black rounded-full ring-1 ring-white overflow-hidden';
 
     return (
         <div className={`flex flex-col items-center ${className}`} >
@@ -26,7 +26,7 @@ const Reviews: React.FC<DefaultProps> = ({ className }) => {
                     <p className='text-white text-[.6rem] font-semibold mt-1'>15K+</p>
                 </div>
             </div>
-            <p className='text-[.5rem] text-center text-nowrap sm:text-[.7rem]'>Excellent <strong>4.000+</strong> Reviews</p>
+            <p className='text-[.7rem] text-center text-nowrap'>Excellent <strong>4.000+</strong> Reviews</p>
         </div >
     )
 }
