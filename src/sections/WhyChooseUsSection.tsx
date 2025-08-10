@@ -54,7 +54,7 @@ const WhyChooseUsSection: React.FC = () => {
                         </div>
                     </div>
                     <div className='flex flex-col-reverse sm:flex-row items-start gap-4'>
-                        <div className='flex-1 flex justify-center items-center w-full'>
+                        <div className='flex-1 flex justify-center items-center xl:justify-start w-full'>
                             <CircleLinkButton url='#ContactSection'>Contact US</CircleLinkButton >
                         </div>
                         <div className='flex-1 flex item-center gap-4'>
