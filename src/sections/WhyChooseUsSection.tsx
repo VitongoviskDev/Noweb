@@ -32,9 +32,9 @@ const WhyChooseUsSection: React.FC = () => {
 
                 {/* Right container */}
                 <div className='flex-1 flex flex-col items-center gap-8 xl:justify-between xl:max-w-xl'>
-                    <div className='flex-1 flex items-center gap-4'>
+                    <div className='flex-1 flex flex-col-reverse md:flex-row items-center gap-4'>
                         <div className='xl:flex-1'>
-                            <div className='flex justify-center items-center h-72 w-70 overflow-hidden'>
+                            <div className='flex justify-center items-center h-72 w-80 md:w-70 overflow-hidden'>
                                 <img src={imgMeeting} alt="image1"
                                     className='h-full object-cover' />
                             </div>
@@ -53,8 +53,8 @@ const WhyChooseUsSection: React.FC = () => {
                             <p className='text-gray-400 text-base'>Conduct thorough market research to the fast target audience behaviours.</p>
                         </div>
                     </div>
-                    <div className='flex items-start gap-4'>
-                        <div className='flex-1'>
+                    <div className='flex flex-col-reverse sm:flex-row items-start gap-4'>
+                        <div className='flex-1 flex justify-center items-center w-full'>
                             <CircleLinkButton>Contact US</CircleLinkButton >
                         </div>
                         <div className='flex-1 flex item-center gap-4'>

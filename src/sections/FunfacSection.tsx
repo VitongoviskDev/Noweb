@@ -19,7 +19,7 @@ const FunfactItems = [
 
 const FunfacSection: React.FC = () => {
   return (
-    <DefaultSection center>
+    <DefaultSection center className='pt-0'>
       <ul className='flex [&>li:not(:first-child)]:-ml-3 sm:[&>li:not(:first-child)]:-ml-6 lg:[&>li:not(:first-child)]:-ml-10'>
         {
           FunfactItems.map((item, index) => (
