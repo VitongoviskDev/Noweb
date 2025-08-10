@@ -8,8 +8,7 @@ import DefaultSection from '../components/DefaultSection'
 
 const HeroSection: React.FC = () => {
     return (
-        <section className='flex justify-center items-center px-12 sm:px-24 md:px-24 lg:px-32 py-20 
-            sm:bg-blue-200 md:bg-red-200 lg:bg-blue-200 xl:bg-red-200'>
+        <section className='flex justify-center items-center px-12 sm:px-24 md:px-24 lg:px-32 py-20'>
             <div className="absolute inset-0 bg-texture -z-1 opacity-[.06]"></div>
             <div className=''>
                 <div className='flex justify-between items-end'>
