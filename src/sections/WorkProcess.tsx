@@ -5,6 +5,7 @@ import WorkStepCard from '../components/WorkStepCard'
 import workStepIcon1 from '../assets/images/WorkStepIcons/step1.png'
 import workStepIcon2 from '../assets/images/WorkStepIcons/step2.png'
 import workStepIcon3 from '../assets/images/WorkStepIcons/step3.png'
+import DefaultSection from '../components/DefaultSection'
 
 const WorkProcessSteps = [
     {
@@ -26,7 +27,7 @@ const WorkProcessSteps = [
 
 const WorkProcess: React.FC = () => {
     return (
-        <section className='px-6 py-20 flex flex-col items-center justify-center'>
+        <DefaultSection id='CareersSection' className='px-6 py-20 flex flex-col items-center justify-center'>
             <SectionTitle subtitle='WORKFLOW' centered>HOW WE WORK</SectionTitle>
             <div className='flex flex-col md:flex-row items-start gap-6 mt-12'>
                 {
@@ -40,7 +41,7 @@ const WorkProcess: React.FC = () => {
                     ))
                 }
             </div>
-        </section>
+        </DefaultSection>
     )
 }
 

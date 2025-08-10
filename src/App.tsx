@@ -6,10 +6,11 @@ import FunfacSection from './sections/FunfacSection'
 import VideoSection from './sections/VideoSection'
 import WorkProcess from './sections/WorkProcess'
 import WhyChooseUsSection from './sections/WhyChooseUsSection'
+import FooterSection from './sections/FooterSection'
 
 const App: React.FC = () => {
   return (
-    <div style={{ fontFamily: 'DM Sans' }}>
+    <div>
       <header>
 
       </header>
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <WorkProcess />
         <WhyChooseUsSection />
       </main>
+      <FooterSection/>
     </div>
   )
 }

@@ -10,6 +10,12 @@
 
 @import "tailwindcss";
 
+html, body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--color-secondary);
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #FFFFFF;
   --color-primary-shade: #F8F8F8;

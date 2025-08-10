@@ -6,13 +6,13 @@ import imgNotebook from '../assets/images/ChooseUs/Notebook.jpg';
 import imgMarketing from '../assets/images/ChooseUs/MarketingStrategy.jpg';
 import imgUxUi from '../assets/images/ChooseUs/UxUiSolution.jpg';
 
-import CircleLinkButton from '../components/ContacButton';
+import CircleLinkButton from '../components/CircleLinkButton';
 import Tag from '../components/Tag';
 import DefaultSection from '../components/DefaultSection';
 
 const WhyChooseUsSection: React.FC = () => {
     return (
-        <DefaultSection center className='bg-primary-shade'>
+        <DefaultSection id='ContactSection' center className='bg-primary-shade'>
             <div className='flex flex-col xl:flex-row gap-4'>
                 {/* Left container */}
                 <div className='flex-1 flex flex-col items-center xl:items-end gap-8 xl:max-w-2xl'>
@@ -55,7 +55,7 @@ const WhyChooseUsSection: React.FC = () => {
                     </div>
                     <div className='flex flex-col-reverse sm:flex-row items-start gap-4'>
                         <div className='flex-1 flex justify-center items-center w-full'>
-                            <CircleLinkButton>Contact US</CircleLinkButton >
+                            <CircleLinkButton url='#ContactSection'>Contact US</CircleLinkButton >
                         </div>
                         <div className='flex-1 flex item-center gap-4'>
                             <Tag image={imgMarketing}>Marketings<br />Strategy</Tag>

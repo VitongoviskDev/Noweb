@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
     const groups = [Group1, Group2, Group3, Group4, Group5];
 
     return (
-        <DefaultSection className='bg-secondary text-white'>
+        <DefaultSection id='AboutSection' className='bg-secondary text-white'>
                 <div className='absolute top-8 right-8 md:top-16 md:right-20 h-[4rem]'>
                     <img src={ColabSectionImage} alt="ColabSectionImage"
                         className='h-full object-contain' />
