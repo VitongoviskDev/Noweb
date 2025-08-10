@@ -1,10 +1,11 @@
 import React from 'react'
 import HeroSection from './sections/HeroSection'
-import ColabSection from './sections/ColabSection'
+import AboutSection from './sections/AboutSection'
 import ServicesSection from './sections/ServicesSection'
 import FunfacSection from './sections/FunfacSection'
 import VideoSection from './sections/VideoSection'
 import WorkProcess from './sections/WorkProcess'
+import WhyChooseUsSection from './sections/WhyChooseUsSection'
 
 const App: React.FC = () => {
   return (
@@ -14,11 +15,12 @@ const App: React.FC = () => {
       </header>
       <main>
         <HeroSection />
-        <ColabSection />
+        <AboutSection />
         <ServicesSection />
         <FunfacSection />
         <VideoSection />
         <WorkProcess />
+        <WhyChooseUsSection />
       </main>
     </div>
   )

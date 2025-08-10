@@ -10,6 +10,15 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #FFFFFF;
+  --color-primary-shade: #F8F8F8;
+  --color-secondary: #121212;
+  --color-accent: #BFF747;
+
+  --color-text: #000000;
+}
+
 @layer utilities {
   .bg-texture {
     background-image: url('./assets/images/HeroSectionTexture.png');

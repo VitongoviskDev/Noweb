@@ -1,4 +1,5 @@
 import React from 'react'
+import DefaultSection from '../components/DefaultSection'
 
 const FunfactItems = [
   {
@@ -18,7 +19,7 @@ const FunfactItems = [
 
 const FunfacSection: React.FC = () => {
   return (
-    <section className='px-6 py-24 flex justify-center items-center'>
+    <DefaultSection center>
       <ul className='flex [&>li:not(:first-child)]:-ml-3 sm:[&>li:not(:first-child)]:-ml-6 lg:[&>li:not(:first-child)]:-ml-10'>
         {
           FunfactItems.map((item, index) => (
@@ -32,7 +33,7 @@ const FunfacSection: React.FC = () => {
           ))
         }
       </ul>
-    </section>
+    </DefaultSection>
   )
 }
 

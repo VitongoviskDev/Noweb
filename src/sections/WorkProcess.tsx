@@ -27,7 +27,7 @@ const WorkProcessSteps = [
 const WorkProcess: React.FC = () => {
     return (
         <section className='px-6 py-20 flex flex-col items-center justify-center'>
-            <SectionTitle tag='WORKFLOW' centered>HOW WE WORK</SectionTitle>
+            <SectionTitle subtitle='WORKFLOW' centered>HOW WE WORK</SectionTitle>
             <div className='flex flex-col md:flex-row items-start gap-6 mt-12'>
                 {
                     WorkProcessSteps.map((step, index) => (

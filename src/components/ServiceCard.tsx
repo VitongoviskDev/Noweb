@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
                 chamfered flex flex-col justify-between items-start gap-4 max-w-sm p-8 border
                 after:absolute after:bottom-[28px] after:right-[28px] after:w-[79px] after:h-[1px] 
                 after:translate-x-[50%] after:-rotate-[45deg]
-                ${service.highlighted ? 'border-[#BFF747] after:bg-[#BFF747]' : 'border-gray-400 after:bg-gray-400'}
+                ${service.highlighted ? 'border-accent after:bg-accent' : 'border-gray-400 after:bg-gray-400'}
             `}>
                 <ul className="list-disc pl-4 text-xs text-gray-400">
                     <li className='text-sm'>{service.topic}</li>
@@ -28,7 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             </div>
             <div className={`
                 absolute bottom-0 right-0 p-4 ring  rounded-full w-14
-                ${service.highlighted ? 'bg-[#BFF747] -rotate-[45deg] ring-[#BFF747]' : 'bg-white ring-gray-400'}
+                ${service.highlighted ? 'bg-accent -rotate-[45deg] ring-accent' : 'bg-white ring-gray-400'}
             `}>
                 <img src={serviceCardArrow} alt="serviceCardArrow"
                     className='w-full object-contain' />

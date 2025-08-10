@@ -1,17 +1,18 @@
 import React from 'react'
 
 import servicesShape from '../assets/images/ServicesShape.png'
+import type { DefaultProps } from '../util/DefaultProps';
 
-interface SectionTagProps {
-    tag: string;
+interface SectionTagProps extends DefaultProps{
+    subtitle: string;
     children: React.ReactNode;
     centered?: boolean;
 }
 
-const SectionTitle: React.FC<SectionTagProps> = ({ tag, children, centered }) => {
+const SectionTitle: React.FC<SectionTagProps> = ({ subtitle: tag, children, centered, className }) => {
     return (
-        <div className='flex flex-col justify-center items-center'>
-            <div>
+        <div className={`flex flex-col justify-center items-center ${className}`}>
+            <div >
                 <div className={`flex gap-2 ${centered ? 'justify-center' : 'justify-start'}`}>
                     <div className='h-[1rem]'>
                         <img src={servicesShape} alt="servicesShape"
@@ -19,7 +20,7 @@ const SectionTitle: React.FC<SectionTagProps> = ({ tag, children, centered }) =>
                     </div>
                     <p className='text-xs md:text-sm text-gray-400 font-semibold'>{tag}</p>
                 </div>
-                <h1 className='text-2xl md:text-4xl lg:text-5xl' style={{ fontFamily: 'Marcellus' }}>{children}</h1>
+                <h1 className='text-2xl md:text-4xl lg:text-5xl mt-6' style={{ fontFamily: 'Marcellus' }}>{children}</h1>
             </div>
         </div>
     )
