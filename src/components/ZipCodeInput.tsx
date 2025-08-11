@@ -4,11 +4,14 @@ import type { DefaultProps } from '../util/DefaultProps';
 interface ZipCodeInputProps extends DefaultProps {
     zipCode: string;
     setZipCode: (zipCode: string) => void;
+    onChange?: () => void;
 }
 
-const ZipCodeInput: React.FC<ZipCodeInputProps> = ({ zipCode, setZipCode, className }) => {
+const ZipCodeInput: React.FC<ZipCodeInputProps> = ({ zipCode, setZipCode, className, onChange }) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (onChange) onChange();
+        
         let value = e.target.value.replace(/\D/g, "");
 
         if (value.length > 5) {
@@ -17,7 +20,7 @@ const ZipCodeInput: React.FC<ZipCodeInputProps> = ({ zipCode, setZipCode, classN
 
         setZipCode(value);
     };
-
+    
     return (
         <div className='flex flex-col w-full'>
             <label htmlFor="field_zipcode">CEP</label>

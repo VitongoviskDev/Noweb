@@ -36,7 +36,7 @@ const ServiceCards: ServiceCardDTO[] = [
 
 const ServicesSection: React.FC = () => {
     return (
-        <DefaultSection id='ServicesSection' center flexCol>
+        <DefaultSection id='services' center flexCol>
             
             <ImageContainer img={starImage} object='contain' className='absolute top-10 left-12 md:top-30 md:left-20 h-[4rem] lg:h-[8rem]'/>
             <ImageContainer img={starImage} object='contain' className='lg:hidden absolute bottom-10 right-18 h-[8rem]'/>

@@ -5,7 +5,7 @@ import type { NavLinkDTO } from "../../dto/NavLinkDTO";
 import logo from '../../assets/images/logo.png'
 
 import { FaBars } from "react-icons/fa";
-import CtaButton from "../CtaButton";
+import SquareButton from "../SquareButton";
 import { MdArrowOutward } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import ZipCodeModal from "../ZipCodeModal";
@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 import MobileNavButton from "./MobileNavButton";
 import DesktopNavButton from "./DesktopNavButton";
 import ImageContainer from "../ImageContainer";
+import CtaLink from "../CtaLInk";
 
 interface NavbarProps {
     links: NavLinkDTO[];
@@ -53,8 +54,8 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 </ul>
                 <div className="flex items-center gap-4">
                     <div className="flex justify-end items-center gap-4">
-                        <CtaButton callback={handleOpenModal}>  <IoSearchOutline /></CtaButton>
-                        <CtaButton highlighted url="/#ContactSection"> Get A Quote <MdArrowOutward /></CtaButton>
+                        <SquareButton callback={handleOpenModal}>  <IoSearchOutline /></SquareButton>
+                        <CtaLink highlighted url="/#contact"> Get A Quote <MdArrowOutward /></CtaLink>
                     </div>
 
                     {/* Burger Menu */}

@@ -28,6 +28,7 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
         unidade: ''
     });
     const [filledFields, setFilledFields] = useState<string[]>([]);
+    const [error, setError] = useState<string>('');
 
     const handleOnCloseModal = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
@@ -36,39 +37,57 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
 
     const fetchZipCodeApi = async (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-        
+
         const zip = zipCode.replace('-', '');
-        const response = await axios.get<ZipCodeDTO>(`https://viacep.com.br/ws/${zip}/json/`);
-        setResponseData(response.data);
-        setFilledFields([]);
-        setFilledFields([
-            response.data.logradouro ? 'logradouro' : '',
-            response.data.complemento ? 'complemento' : '',
-            response.data.bairro ? 'bairro' : '',
-            response.data.uf ? 'uf' : '',
-            response.data.estado ? 'estado' : '',
-        ])
+        try {
+            const response = await axios.get<ZipCodeDTO>(`https://viacep.com.br/ws/${zip}/json/`);
+
+            if ((response.data as any).erro) {
+                setError('CEP não encontrado.');
+                return;
+            }
+
+            setResponseData(response.data);
+
+            setFilledFields([
+                ...(response.data.logradouro ? ['logradouro'] : []),
+                ...(response.data.complemento ? ['complemento'] : []),
+                ...(response.data.bairro ? ['bairro'] : []),
+                ...(response.data.uf ? ['uf'] : []),
+                ...(response.data.estado ? ['estado'] : [])
+            ]);
+        } catch (error) {
+            setError('O cep digitado é inválido');
+        }
     };
+
+
+    const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        onCloseModal();
+
+        alert("Dados enviados com sucesso!");
+    }
 
     return (
         <ScreenBlocker>
-            <div className="relative flex flex-col items-center gap-4 bg-white p-8 rounded-lg">
+            <div className="relative flex flex-col items-center gap-4 bg-white p-8 rounded-lg max-w-[80vw]">
                 <button
                     className="absolute top-2 right-2 text-2xl"
                     onClick={handleOnCloseModal}
                 >
                     <IoClose />
                 </button>
-                <div className="flex items-end gap-2 w-full">
-                    <ZipCodeInput zipCode={zipCode} setZipCode={setZipCode} className="flex-1" />
-                    <button
-                        className="flex justify-center items-center bg-accent h-11 aspect-square rounded-lg"
-                        onClick={fetchZipCodeApi}
-                    >
-                        <IoSearchOutline />
-                    </button>
-                </div>
-                <div className="flex flex-col gap-2 h-full w-full mt-4">
+                <form onSubmit={handleFormSubmit} className='flex flex-col gap-2 h-full w-full'>
+                    <div className="flex items-end gap-2 w-full mb-4">
+                        <ZipCodeInput zipCode={zipCode} setZipCode={setZipCode} className="flex-1" onChange={() => setError('')} />
+                        <button type='button'
+                            className="flex justify-center items-center bg-accent h-11 aspect-square rounded-lg"
+                            onClick={fetchZipCodeApi}
+                        >
+                            <IoSearchOutline />
+                        </button>
+                    </div>
                     <TextInputField
                         value={responseData.logradouro}
                         onChange={(value) => setResponseData({ ...responseData, logradouro: value })}
@@ -100,7 +119,7 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
                             className="w-1/3"
                             label="UF"
                             placeholder="Ex: SP"
-                        blockEdition={filledFields.includes('uf')}
+                            blockEdition={filledFields.includes('uf')}
                         />
                         <TextInputField
                             value={responseData.estado}
@@ -108,12 +127,18 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
                             className="w-full"
                             label="Estado"
                             placeholder="Ex: São Paulo"
-                        blockEdition={filledFields.includes('estado')}
+                            blockEdition={filledFields.includes('estado')}
                         />
                     </div>
-                </div>
+                    <div className='p-2 text-center mt-2'>
+                        <p className='text-red-400 font-bold'>{error}</p>
+                        <button type='submit' className='cursor-pointer bg-accent rounded-md p-2 text-md mt-4 w-full'>
+                            Enviar
+                        </button>
+                    </div>
+                </form>
             </div>
-        </ScreenBlocker>
+        </ScreenBlocker >
     );
 };
 

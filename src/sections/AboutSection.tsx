@@ -30,7 +30,7 @@ const AboutSection: React.FC = () => {
                         <Article linkText='More About Us' url='#about1' className='lg:space-y-10'>
                             Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers,
                         </Article>
-                        <Article linkText='Get In Touch' url='#ContactSection' className='lg:space-y-10'>
+                        <Article linkText='Get In Touch' url='#contact' className='lg:space-y-10'>
                             Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers,
                         </Article>
                     </div>

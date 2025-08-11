@@ -50,7 +50,7 @@ const MobileNavButton: React.FC<MobileNavButtonProps> = ({ link, setSubmenu, cur
                     <ul className="flex flex-col gap-4 px-6 py-4">
                         {
                             link.submenu?.map((submenuLink, index) => (
-                                <MobileNavButton key={`${submenuLink.label}_${index}`} link={submenuLink} currentSubmenu={currentSubmenu} setSubmenu={setSubmenu} onCloseMenu={onCloseMenu}/>
+                                <MobileNavButton key={`${submenuLink.label}_${index}`} link={submenuLink} currentSubmenu={currentSubmenu} setSubmenu={setSubmenu} onCloseMenu={onCloseMenu} />
                             ))
                         }
                     </ul>
