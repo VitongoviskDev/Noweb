@@ -8,7 +8,6 @@ Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + Tailwi
   <li>React</li>
   <li>React Icons</li>
   <li>TypeScript</li>
-  <li>TypeScript</li>
   <li>TailwindCSS</li>
   <li>Axio</li>
 </ul>
