@@ -17,16 +17,16 @@ Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + Tailwi
 bash
 Copiar
 Editar
-# 1️⃣ Clonar o repositório
+# 1️º Clonar o repositório
 git clone git@github.com:VitongoviskDev/Noweb.git
 
-# 2️⃣ Entrar na pasta do projeto
+# 2️º Entrar na pasta do projeto
 cd Noweb
 
-# 3️⃣ Instalar dependências
+# 3️º Instalar dependências
 npm install
 
-# 4️⃣ Rodar o servidor de desenvolvimento
+# 4️º Rodar o servidor de desenvolvimento
 npm run dev
 🌐 Acessando no navegador
 Após iniciar o projeto, abra no navegador:
