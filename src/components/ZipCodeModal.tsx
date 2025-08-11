@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ZipCodeInput from './ZipCodeInput';
 import { IoClose, IoSearchOutline } from 'react-icons/io5';
 import axios from 'axios';
@@ -38,7 +38,9 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
     const fetchZipCodeApi = async (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
 
+        saveZipcode(zipCode);
         const zip = zipCode.replace('-', '');
+
         try {
             const response = await axios.get<ZipCodeDTO>(`https://viacep.com.br/ws/${zip}/json/`);
 
@@ -60,6 +62,20 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
             setError('O cep digitado é inválido');
         }
     };
+
+    const saveZipcode = (value: string) => {
+        const savedZip = localStorage.getItem('zipCode');
+        if (!savedZip) {
+            localStorage.setItem('zipCode', value);
+        }
+    };
+
+    useEffect(() => {
+        const savedZip = localStorage.getItem('zipCode');
+        if (savedZip) {
+            setZipCode(savedZip);
+        }
+    }, []);
 
 
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
