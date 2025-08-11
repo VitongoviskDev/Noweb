@@ -38,4 +38,4 @@ Prévia Desktop
 ![Preview Desktop](public/preview.png )
 
 Prévia Desktop
-![Preview Desktop](public/previewMobile.png )
+![Preview Mobile](public/previewMobile.png )
