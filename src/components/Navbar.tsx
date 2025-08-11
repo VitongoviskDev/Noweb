@@ -10,6 +10,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import ZipCodeModal from "./ZipCodeModal";
 import { useLocation } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
+import MobileNavButton from "./Navbar/MobileNavButton";
+import DesktopNavButton from "./Navbar/DesktopNavButton";
 
 interface NavbarProps {
     links: NavLink[];
@@ -18,6 +20,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [modalShown, setModalShown] = useState(false);
+
     const [submenu, setSubmenu] = useState<string>('');
 
     const location = useLocation();
@@ -41,47 +44,12 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 <ZipCodeModal onCloseModal={handleCloseModal} />
             }
             <div className="flex justify-between items-center gap-4 px-4 py-6 h-20 w-full max-w-[95rem]">
-
-                {/* Logo */}
-                <div className="xl:flex-1 h-full">
+                <div className="xl:flex-1 h-full w-fit">
                     <img src={logo} alt="Logo" className="h-full object-contain" />
                 </div>
-
-                {/* Menu Desktop */}
                 <ul className=" hidden lg:flex lg:flex-1 xl:justify-center gap-6 max-w-2xl">
                     {links.map((link) => (
-                        <li key={link.href}
-                            className={`relative flex items-center gap-2`}>
-                            <a href={link.href}
-                                className={`text-nowrap text-gray-700 hover:text-blue-600 transition
-                                    ${location.pathname + location.hash == link.href ? 'border-b-2 border-accent' : ''}
-                                    `}>
-                                {link.label}
-                            </a>
-                            {
-                                link.submenu && link.submenu.length > 0 &&
-                                <IoIosArrowDown onClick={() => { setSubmenu(prev =>  prev == link.label ? '' : link.label) }} />
-                            }
-                            {
-                                submenu && link.label == submenu &&
-                                <div className="absolute top-8 -left-0 w-fit h-fit bg-white shadow-md">
-                                    <ul className="flex flex-col gap-2 px-4 py-2">
-                                        {
-                                            link.submenu!.map((submenuLink, index) => (
-                                                <li key={index}
-                                                    className="p-2"
-                                                    onClick={() => setSubmenu('')}>
-                                                    <a href={submenuLink.href}
-                                                        className={`text-nowrap text-gray-700 hover:text-blue-600 transition`}>
-                                                        {submenuLink.label}
-                                                    </a>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                            }
-                        </li>
+                        <DesktopNavButton link={link} setSubmenu={setSubmenu} currentSubmenu={submenu} />
                     ))}
                 </ul>
 
@@ -100,28 +68,15 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
-            {isOpen && (
-                <div className="lg:hidden bg-white">
-                    <ul className="flex flex-col gap-4 py-4">
-                        {links.map((link) => (
-                            <li
-                                key={link.href}
-                                className={`
-                                    p-2 
-                                    ${location.pathname + location.hash == link.href ? 'border-l-5 border-accent bg-accent-shade' : ''}`}>
-                                <a
-                                    href={link.href}
-                                    className="text-gray-700 hover:text-blue-600 transition duratio-300 ease-in-out"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+            <div className={`
+                    lg:hidden bg-white w-full px-8 transition-all duration-300 ease-in-out overflow-hidden
+                    ${isOpen ? 'delay-300 max-h-96 ring-1 ring-gray-300' : 'max-h-0'}`}>
+                <ul className="flex flex-col gap-4 py-4 text-right">
+                    {links.map((link) => (
+                        <MobileNavButton link={link} setSubmenu={setSubmenu} currentSubmenu={submenu} onCloseMenu={() => setIsOpen(false)} />
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 }

@@ -40,7 +40,7 @@ const navLinks: NavLink[] = [
   },
   {
     href: "/#AboutSection", label: "About Us",
-    submenu: []
+
   },
   {
     href: "/#portifolio", label: "Portifólio",
@@ -64,8 +64,7 @@ const navLinks: NavLink[] = [
     ]
   },
   {
-    href: "/#ContactSection", label: "Contact Us",
-    submenu: []
+    href: "/#ContactSection", label: "Contact Us"
   }
 ]
 

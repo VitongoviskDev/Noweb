@@ -18,7 +18,7 @@ const CtaButton: React.FC<CtaButtonProps> = ({ url, callback, children, highligh
 
     return (
         <div className={`
-            flex items-center justify-center h-12 text-base px-4
+            flex items-center justify-center h-8 md:h-12 text-xs md:text-base px-2.5 md:px-4
             ${highlighted ? 'bg-accent' : 'ring ring-black'}
         `}>
             {
