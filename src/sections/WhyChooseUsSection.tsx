@@ -9,10 +9,11 @@ import imgUxUi from '../assets/images/ChooseUs/UxUiSolution.jpg';
 import CircleLinkButton from '../components/CircleLinkButton';
 import Tag from '../components/Tag';
 import DefaultSection from '../components/DefaultSection';
+import ImageContainer from '../components/ImageContainer';
 
 const WhyChooseUsSection: React.FC = () => {
     return (
-        <DefaultSection id='ContactSection' center className='bg-primary-shade'>
+        <DefaultSection id='contact' center className='bg-primary-shade'>
             <div className='flex flex-col xl:flex-row gap-4'>
                 {/* Left container */}
                 <div className='flex-1 flex flex-col items-center xl:items-end gap-8 xl:max-w-2xl'>
@@ -24,20 +25,14 @@ const WhyChooseUsSection: React.FC = () => {
                             We believe that the surest measure of success is when our partners with us more than half It's more than just the visuals.
                         </p>
                     </div>
-                    <div className='flex justify-center items-center overflow-hidden'>
-                        <img src={imgNotebook} alt="image2"
-                            className='h-full object-contain' />
-                    </div>
+                    <ImageContainer img={imgNotebook} object='contain' className='flex justify-center items-center overflow-hidden' />
                 </div>
 
                 {/* Right container */}
                 <div className='flex-1 flex flex-col items-center gap-8 xl:justify-between xl:max-w-xl'>
                     <div className='flex-1 flex flex-col-reverse md:flex-row items-center gap-4'>
                         <div className='xl:flex-1'>
-                            <div className='flex justify-center items-center h-72 w-80 md:w-70 overflow-hidden'>
-                                <img src={imgMeeting} alt="image1"
-                                    className='h-full object-cover' />
-                            </div>
+                            <ImageContainer img={imgMeeting} object='cover' className='flex justify-center items-center h-72 w-80 md:w-70 overflow-hidden' />
                         </div>
                         <div className='flex-1 flex flex-col justify-center gap-4 h-full'>
                             <p className='text-gray-400 text-base'>We believe that the surest measure of success is when our partners with us more than half It's more than just the visuals. We're here to support your growth.</p>

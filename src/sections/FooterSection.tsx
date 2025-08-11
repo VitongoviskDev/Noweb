@@ -1,6 +1,7 @@
 import React from 'react'
 import CircleLinkButton from '../components/CircleLinkButton'
 import { FaBehance, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const FooterSection: React.FC = () => {
     return (
@@ -15,22 +16,22 @@ const FooterSection: React.FC = () => {
             <div className='px-12 sm:px-24 md:px-24 lg:px-48 py-24'>
                 <div className='flex items-end justify-between border-b border-gray-300 pb-4'>
                     <ul className="grid grid-cols-2 gap-x-4 xl:flex items-center xl:gap-12">
-                        <li><a href="#AboutSection">About company</a></li>
-                        <li><a href="#CareersSection">Our Careers</a></li>
-                        <li><a href="#ServicesSection">Services</a></li>
-                        <li><a href="#ContactSection">Contact</a></li>
+                        <li><Link to="#AboutSection">About company</Link></li>
+                        <li><Link to="#CareersSection">Our Careers</Link></li>
+                        <li><Link to="#ServicesSection">Services</Link></li>
+                        <li><Link to="#ContactSection">Contact</Link></li>
                     </ul>
                     <ul className='flex flex-col md:flex-row items-start  md:items-center md:gap-2 lg:gap-4 xl:gap-12'>
-                        <li><a href="#PrivacyPolicy">Privacy Policy</a></li>
-                        <li><a href="#TermsAndConditions">Terms & Conditions</a></li>
+                        <li><Link to="#PrivacyPolicy">Privacy Policy</Link></li>
+                        <li><Link to="#TermsAndConditions">Terms & Conditions</Link></li>
                     </ul>
                 </div>
                 <div className='flex flex-col md:flex-row items-center justify-between gap-4 pt-6'>
                     <ul className='flex items-center gap-5 [&>li]:text-secodary'>
-                        <li><a href="#FacebookLink"><FaFacebookF /></a></li>
-                        <li><a href="#TwitterLink"><FaTwitter /></a></li>
-                        <li><a href="#InstagramLink"><FaInstagram /></a></li>
-                        <li><a href="#BehanceLink"><FaBehance /></a></li>
+                        <li><Link to="#FacebookLink"><FaFacebookF /></Link></li>
+                        <li><Link to="#TwitterLink"><FaTwitter /></Link></li>
+                        <li><Link to="#InstagramLink"><FaInstagram /></Link></li>
+                        <li><Link to="#BehanceLink"><FaBehance /></Link></li>
                     </ul>
                     <p className='font-light text-base'>Copyright © 2025 Nex. All Rights Reserved.</p>
                 </div>

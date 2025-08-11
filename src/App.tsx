@@ -7,7 +7,7 @@ import VideoSection from './sections/VideoSection'
 import WorkProcess from './sections/WorkProcess'
 import WhyChooseUsSection from './sections/WhyChooseUsSection'
 import FooterSection from './sections/FooterSection'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import { navLinks } from './util/Menu'
 
 const App: React.FC = () => {

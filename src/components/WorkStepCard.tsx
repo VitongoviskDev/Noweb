@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io';
+import ImageContainer from './ImageContainer';
 
 interface WorkStepCardProps {
     index: number;
@@ -10,11 +11,9 @@ interface WorkStepCardProps {
 
 const WorkStepCard: React.FC<WorkStepCardProps> = ({ index, title, description, icon }) => {
     return (
-        <div className='flex-1 flex md:flex-col gap-2 max-w-xs min-h-40 md:max-w-sm md:w-[24vw]'>
+        <div className='flex-1 flex md:flex-col gap-2 max-w-xs min-h-40 md:max-w-sm'>
             <div className='flex flex-col md:flex-row items-center'>
-                <div className='flex jutify-center items-center w-18 sm:w-20 xl:w-24 p-6 aspect-square rounded-full ring ring-black'>
-                    <img src={icon} alt={icon} className='w-full object-contain' />
-                </div>
+                <ImageContainer img={icon} className='flex jutify-center items-center w-18 sm:w-20 xl:w-24 p-6 aspect-square rounded-full ring ring-black' object='contain'/>
                 <div className='flex-1 flex flex-col md:flex-row items-center justify-center'>
                     <div className='h-full w-[2px] md:h-[2px] md:w-full bg-black'></div>
                     <IoIosArrowDown className='text-xl -mt-3 md:-ml-3 md:mt-0 md:-rotate-90' />

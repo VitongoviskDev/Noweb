@@ -19,7 +19,7 @@ const DesktopNavButton: React.FC<DesktopNavButtonProps> = ({ link, setSubmenu, c
             className={`relative flex items-center gap-2`}>
             <a href={link.href}
                 className={`
-                    text-nowrap text-gray-700 hover:text-blue-600
+                    text-nowrap font-light text-gray-700 text-md hover:text-blue-600
                     ${location.href.includes(link.href) ? 'border-b-2 border-accent font-bold' : ''}
                 `}
                 onClick={() => setSubmenu('')}>

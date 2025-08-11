@@ -26,8 +26,8 @@ html, body {
   --color-text: #000000;
 
   --text-tiny: 0.625rem;
-  --text-tiny--line-height: 1.5rem; 
-  --text-tiny--letter-spacing: 0.125rem; 
+  --text-tiny--line-height: 0.625rem; 
+  --text-tiny--letter-spacing: 0; 
   --text-tiny--font-weight: 400;
 
   --text-giant: 13rem;

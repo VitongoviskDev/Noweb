@@ -2,6 +2,7 @@ import React from 'react'
 
 import servicesShape from '../assets/images/TitleIcon.png'
 import type { DefaultProps } from '../util/DefaultProps';
+import ImageContainer from './ImageContainer';
 
 interface SectionTagProps extends DefaultProps{
     subtitle: string;
@@ -14,10 +15,7 @@ const SectionTitle: React.FC<SectionTagProps> = ({ subtitle: tag, children, cent
         <div className={`flex flex-col justify-center items-center ${className}`}>
             <div >
                 <div className={`flex gap-2 ${centered ? 'justify-center' : 'justify-start'}`}>
-                    <div className='h-[1rem]'>
-                        <img src={servicesShape} alt="servicesShape"
-                            className='h-full object-contain' />
-                    </div>
+                    <ImageContainer img={servicesShape} className='h-[1rem]' object='contain'/>
                     <p className='text-xs md:text-sm text-gray-400 font-semibold'>{tag}</p>
                 </div>
                 <h1 className='text-2xl md:text-4xl lg:text-5xl mt-6' style={{ fontFamily: 'Marcellus' }}>{children}</h1>

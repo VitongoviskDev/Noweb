@@ -10,7 +10,7 @@ interface DefaultSectionProps extends DefaultProps {
 const DefaultSection: React.FC<DefaultSectionProps> = ({ id, center = false, flexCol = false, className = '', children }) => {
     return (
         <section id={id} className={`
-            relative px-12 sm:px-24 md:px-24 lg:px-48 py-31 text-secondary
+            relative px-12 sm:px-24 md:px-24  py-31 text-secondary
             ${center ? `flex justify-center items-center ${flexCol ? 'flex-col': ''}` : ''}
             ${className}
         `}>

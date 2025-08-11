@@ -2,14 +2,14 @@ import type { NavLinkDTO } from "../dto/NavLinkDTO";
 
 export const navLinks: NavLinkDTO[] = [
   {
-    href: "/#Home", label: "Home",
+    href: "/#home", label: "Home",
     submenu: [
       { href: "/#home/1", label: "Home 1" },
       { href: "/#home/2", label: "Home 2" }
     ]
   },
   {
-    href: "/#AboutSection", label: "About Us",
+    href: "/#about", label: "About Us",
 
   },
   {
@@ -34,6 +34,6 @@ export const navLinks: NavLinkDTO[] = [
     ]
   },
   {
-    href: "/#ContactSection", label: "Contact Us"
+    href: "/#contact", label: "Contact Us"
   }
 ]
