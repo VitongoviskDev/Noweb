@@ -34,8 +34,7 @@ Após iniciar o projeto, abra no navegador: http://localhost:5173
 
 📱 Esta página foi construída com o conceito mobile-first para garantir a responsividade e uma boa experiencia para todos.
 
-Prévia Desktop
+Prévia Desktop/Mobile
 ![Preview Desktop](public/preview.png )
 
-Prévia Desktop
 ![Preview Mobile](public/previewMobile.png )
