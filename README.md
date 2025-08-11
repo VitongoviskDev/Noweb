@@ -32,7 +32,7 @@ Após iniciar o projeto, abra no navegador: http://localhost:5173
 
 <br/>
 <br/>
-<h3>Você também pode acessar a página através clicando [Link](https://noweb-rho.vercel.app) ou copiando esta URL https://noweb-rho.vercel.app</h3>
+<h3>Você também pode acessar a página clicando ![aqui](https://noweb-rho.vercel.app) ou copiando esta URL https://noweb-rho.vercel.app</h3>
 
 📱 Esta página foi construída com o conceito mobile-first para garantir a responsividade e uma boa experiencia para todos.
 
