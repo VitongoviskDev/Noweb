@@ -1,7 +1,7 @@
 import React from 'react'
 import type { ServiceCardDTO } from '../dto/ServiceCardDtp';
 
-import serviceCardArrow from '../assets/images/ServiceCardArrow.png'
+import serviceCardArrow from '../assets/images/services/ServiceCardArrow.png'
 
 interface ServiceCardProps {
     service: ServiceCardDTO;

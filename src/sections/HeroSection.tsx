@@ -1,14 +1,14 @@
 import React from 'react'
 
-import WebDesignImage from '../assets/images/image.png'
-import HeroSectionImage from '../assets/images/HeroSectionImage.jpg'
+import WebDesignImage from '../assets/images/heroSection/WebDesignIcon.png'
+import HeroSectionImage from '../assets/images/heroSection/HeroSectionImage.jpg'
 import Reviews from '../components/Reviews'
 import Link from '../components/Link'
 import DefaultSection from '../components/DefaultSection'
 
 const HeroSection: React.FC = () => {
     return (
-        <section className='flex justify-center items-center px-12 sm:px-24 md:px-24 lg:px-32 py-20'>
+        <section id={"Home"} className='flex justify-center items-center px-12 sm:px-24 md:px-24 lg:px-32 pt-36 pb-20'>
             <div className="absolute inset-0 bg-texture -z-1 opacity-[.06]"></div>
             <div className=''>
                 <div className='flex justify-between items-end'>

@@ -21,6 +21,7 @@ html, body {
   --color-primary-shade: #F8F8F8;
   --color-secondary: #121212;
   --color-accent: #BFF747;
+  --color-accent-shade: #ECFFEC;
 
   --color-text: #000000;
 
@@ -41,8 +42,14 @@ html, body {
 }
 
 @layer utilities {
+  .lock-scroll {
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
   .bg-texture {
-    background-image: url('./assets/images/HeroSectionTexture.png');
+    background-image: url('./assets/images/heroSection/HeroSectionTexture.png');
     background-repeat: repeat; /* para repetir a textura */
     background-size: 30vw;     /* ou cover, contain, dependendo do efeito */
   }

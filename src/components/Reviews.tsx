@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Person1 from '../assets/images/Person1.jpg'
-import Person2 from '../assets/images/Person2.jpg'
-import Person3 from '../assets/images/Person3.jpg'
+import Person1 from '../assets/images/heroSection/reviews/Person1.jpg'
+import Person2 from '../assets/images/heroSection/reviews/Person2.jpg'
+import Person3 from '../assets/images/heroSection/reviews/Person3.jpg'
 import type { DefaultProps } from '../util/DefaultProps'
 
 const Reviews: React.FC<DefaultProps> = ({ className }) => {

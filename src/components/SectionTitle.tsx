@@ -1,6 +1,6 @@
 import React from 'react'
 
-import servicesShape from '../assets/images/ServicesShape.png'
+import servicesShape from '../assets/images/TitleIcon.png'
 import type { DefaultProps } from '../util/DefaultProps';
 
 interface SectionTagProps extends DefaultProps{

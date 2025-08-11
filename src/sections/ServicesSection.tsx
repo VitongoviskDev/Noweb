@@ -1,6 +1,6 @@
 import React from 'react'
 
-import starImage from '../assets/images/Star.png'
+import starImage from '../assets/images/services/Star.png'
 
 import ServiceImage1 from '../assets/images/services/SeriviceImage1.png'
 import ServiceImage2 from '../assets/images/services/ServiceImage2.png'
@@ -37,6 +37,10 @@ const ServicesSection: React.FC = () => {
     return (
         <DefaultSection id='ServicesSection' center flexCol>
             <div className='absolute top-24 left-12 md:top-16 md:right-20 h-[4rem]'>
+                <img src={starImage} alt="starImage"
+                    className='h-full object-contain' />
+            </div>
+            <div className='lg:hidden absolute bottom-24 right-20 h-[8rem]'>
                 <img src={starImage} alt="starImage"
                     className='h-full object-contain' />
             </div>

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import ColabSectionImage from '../assets/images/ColabSectionImage.png'
+import AbotuSectionImage from '../assets/images/aboutSection/AboutSectionImage.png'
 import Link from '../components/Link'
 
-import Group1 from '../assets/images/colabs/Group-1.png'
-import Group2 from '../assets/images/colabs/Group-2.png'
-import Group3 from '../assets/images/colabs/Group-3.png'
-import Group4 from '../assets/images/colabs/Group-4.png'
-import Group5 from '../assets/images/colabs/Group-5.png'
+import Group1 from '../assets/images/aboutSection/colabs/Group-1.png'
+import Group2 from '../assets/images/aboutSection/colabs/Group-2.png'
+import Group3 from '../assets/images/aboutSection/colabs/Group-3.png'
+import Group4 from '../assets/images/aboutSection/colabs/Group-4.png'
+import Group5 from '../assets/images/aboutSection/colabs/Group-5.png'
 import DefaultSection from '../components/DefaultSection'
 
 const AboutSection: React.FC = () => {
@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
     return (
         <DefaultSection id='AboutSection' className='bg-secondary text-white'>
                 <div className='absolute top-8 right-8 md:top-16 md:right-20 h-[4rem]'>
-                    <img src={ColabSectionImage} alt="ColabSectionImage"
+                    <img src={AbotuSectionImage} alt="ColabSectionImage"
                         className='h-full object-contain' />
                 </div>
                 <div>
@@ -30,11 +30,11 @@ const AboutSection: React.FC = () => {
                         </div>
                         <div className='max-w-xs lg:max-w-sm space-y-4 lg:space-y-10'>
                             <p className='text-xs md:text-sm'>Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers, </p>
-                            <Link className='place-self-start border-white'>More About Us</Link>
+                            <Link url="#about1" className='place-self-start border-white'>More About Us</Link>
                         </div>
                         <div className='max-w-xs lg:max-w-sm space-y-4 lg:space-y-10'>
                             <p className='text-xs md:text-sm'>Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers, </p>
-                            <Link className='place-self-start border-white'>Get In Touch</Link>
+                            <Link url="#ContactSection" className='place-self-start border-white'>Get In Touch</Link>
                         </div>
                     </div>
                 </div>
