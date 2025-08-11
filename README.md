@@ -49,4 +49,4 @@ Funcionalidades principais:
 🎨 Estilização rápida e consistente com TailwindCSS
 
 📷 Prévia
-![Logo noweb](public/assets/preview.png )
+![Preview](public/assets/preview.png )
