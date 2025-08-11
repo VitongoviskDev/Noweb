@@ -2,7 +2,7 @@
 
 Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + TailwindCSS, que consome a API ViaCEP para busca e preenchimento automático de informações de endereço a partir de um CEP.
 
-🚀 Tecnologias utilizadas
+Tecnologias utilizadas
 <ul>
   <li>Vite</li>
   <li>React</li>
@@ -12,7 +12,7 @@ Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + Tailwi
   <li>Axio</li>
 </ul>
 
-📥 Como rodar o projeto
+<h2>Como rodar o projeto</h2>
 
 
 # <h3>1️º Clonar o repositório</h3>
@@ -26,7 +26,8 @@ npm install
 
 # <h2>4️º Rodar o servidor de desenvolvimento</h2>
 npm run dev
-🌐 Acessando no navegador
+
+<h2>Acessando no navegador</h2>
 Após iniciar o projeto, abra no navegador: http://localhost:5173
 
 <br/>
