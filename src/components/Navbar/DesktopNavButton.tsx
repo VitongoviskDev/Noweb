@@ -24,7 +24,8 @@ const DesktopNavButton: React.FC<DesktopNavButtonProps> = ({ link, setSubmenu, c
                 `}
                 onClick={() => setSubmenu('')}>
                 {link.label}
-a            {
+            </a>
+            {
                 link.submenu &&
                 <IoIosArrowDown
                     onClick={() => { setSubmenu(isCurrentSubmenu() ? '' : link.label) }}
