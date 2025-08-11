@@ -1,5 +1,5 @@
 import React from 'react'
-import type { ServiceCardDTO } from '../dto/ServiceCardDtp';
+import type { ServiceCardDTO } from '../dto/ServiceCardDTO';
 
 import serviceCardArrow from '../assets/images/services/ServiceCardArrow.png'
 

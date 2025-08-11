@@ -7,7 +7,7 @@ import ServiceImage2 from '../assets/images/services/ServiceImage2.png'
 import ServiceImage3 from '../assets/images/services/ServiceImage3.png'
 
 import ServiceCard from '../components/ServiceCard'
-import type { ServiceCardDTO } from '../dto/ServiceCardDtp'
+import type { ServiceCardDTO } from '../dto/ServiceCardDTO'
 import SectionTitle from '../components/SectionTitle'
 import DefaultSection from '../components/DefaultSection'
 

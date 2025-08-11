@@ -1,6 +1,6 @@
 // Navbar.tsx
 import { useEffect, useState } from "react";
-import type { NavLink } from "../util/NavLink";
+import type { NavLinkDTO } from "../dto/NavLinkDTO";
 
 import logo from '../assets/images/logo.png'
 import { FaBars } from "react-icons/fa";
@@ -14,7 +14,7 @@ import MobileNavButton from "./Navbar/MobileNavButton";
 import DesktopNavButton from "./Navbar/DesktopNavButton";
 
 interface NavbarProps {
-    links: NavLink[];
+    links: NavLinkDTO[];
 }
 
 const Navbar: React.FC<NavbarProps> = ({ links }) => {

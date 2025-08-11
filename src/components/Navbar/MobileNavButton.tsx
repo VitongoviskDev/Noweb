@@ -1,9 +1,9 @@
 import React from 'react'
-import type { NavLink } from '../../util/NavLink';
+import type { NavLinkDTO } from '../../dto/NavLinkDTO';
 import { IoIosArrowDown } from 'react-icons/io';
 
 interface MobileNavButtonProps {
-    link: NavLink;
+    link: NavLinkDTO;
     setSubmenu: (buttonLabel: string) => void;
     currentSubmenu: string;
     onCloseMenu: () => void;
