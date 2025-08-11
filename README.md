@@ -13,19 +13,18 @@ Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + Tailwi
 </ul>
 
 📥 Como rodar o projeto
-bash
-Copiar
-Editar
-# 1️º Clonar o repositório
+
+
+# <h3>1️º Clonar o repositório</h3>
 git clone git@github.com:VitongoviskDev/Noweb.git
 
-# 2️º Entrar na pasta do projeto
+# <h3>2️º Entrar na pasta do projeto</h3>
 cd Noweb
 
-# 3️º Instalar dependências
+# <h3>3️º Instalar dependências</h3>
 npm install
 
-# 4️º Rodar o servidor de desenvolvimento
+# <h2>4️º Rodar o servidor de desenvolvimento</h2>
 npm run dev
 🌐 Acessando no navegador
 Após iniciar o projeto, abra no navegador: http://localhost:5173
