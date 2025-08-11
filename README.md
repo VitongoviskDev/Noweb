@@ -27,7 +27,7 @@ Tecnologias utilizadas
 <li>npm run dev</li>
 
 <br/>
-#<h2>Acessando no navegador</h2>
+<h2>Acessando no navegador</h2>
 Após iniciar o projeto, abra no navegador: http://localhost:5173
 
 <br/>
