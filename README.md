@@ -24,9 +24,10 @@ cd Noweb
 # <h3>3️º Instalar dependências</h3>
 npm install
 
-# <h2>4️º Rodar o servidor de desenvolvimento</h2>
+# <h3>4️º Rodar o servidor de desenvolvimento</h3>
 npm run dev
 
+<br/>
 <h2>Acessando no navegador</h2>
 Após iniciar o projeto, abra no navegador: http://localhost:5173
 
