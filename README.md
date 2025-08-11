@@ -29,23 +29,13 @@ npm install
 # 4️º Rodar o servidor de desenvolvimento
 npm run dev
 🌐 Acessando no navegador
-Após iniciar o projeto, abra no navegador:
+Após iniciar o projeto, abra no navegador: http://localhost:5173
 
-arduino
-Copiar
-Editar
-http://localhost:5173
-📌 Sobre a aplicação
-Esta página foi construída com o conceito mobile-first, garantindo uma experiência fluida e responsiva.
-Funcionalidades principais:
 
-🔍 Busca de endereços pelo CEP via API ViaCEP
+📱 Esta página foi construída com o conceito mobile-first para garantir a responsividade e uma boa experiencia para todos.
 
-📝 Preenchimento automático dos campos com possibilidade de edição
+Prévia Desktop
+![Preview Desktop](public/preview.png )
 
-📱 Layout otimizado para dispositivos móveis
-
-🎨 Estilização rápida e consistente com TailwindCSS
-
-📷 Prévia
-![Preview](public/preview.png )
+Prévia Desktop
+![Preview Desktop](public/previewMobile.png )
