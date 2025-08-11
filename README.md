@@ -3,17 +3,15 @@
 Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + TailwindCSS, que consome a API ViaCEP para busca e preenchimento automático de informações de endereço a partir de um CEP.
 
 🚀 Tecnologias utilizadas
-Vite – build rápido e leve
-
-React – biblioteca para construção de interfaces
-
-TypeScript – tipagem estática para JavaScript
-
-TailwindCSS – estilização utilitária, modelo mobile-first
-
-React Icons – ícones prontos e customizáveis
-
-Axios – cliente HTTP para requisições à API
+<ul>
+  <li>Vite</li>
+  <li>React</li>
+  <li>React Icons</li>
+  <li>TypeScript</li>
+  <li>TypeScript</li>
+  <li>TailwindCSS</li>
+  <li>Axio</li>
+</ul>
 
 📥 Como rodar o projeto
 bash
