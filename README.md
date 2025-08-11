@@ -15,20 +15,19 @@ Tecnologias utilizadas
 <h2>Como rodar o projeto</h2>
 
 
-# <h3>1️º Clonar o repositório</h3>
-git clone git@github.com:VitongoviskDev/Noweb.git
+# <h3>1️º Clonar o repositório e acessar pasta</h3>
+<li>git clone git@github.com:VitongoviskDev/Noweb.git</li>
+<li>cd Noweb</li>
 
-# <h3>2️º Entrar na pasta do projeto</h3>
-cd Noweb
 
 # <h3>3️º Instalar dependências</h3>
-npm install
+<li>npm install</li>
 
-# <h3>4️º Rodar o servidor de desenvolvimento</h3>
-npm run dev
+# <h3>4️º Rodar a aplicação</h3>
+<li>npm run dev</li>
 
 <br/>
-<h2>Acessando no navegador</h2>
+#<h2>Acessando no navegador</h2>
 Após iniciar o projeto, abra no navegador: http://localhost:5173
 
 <br/>
