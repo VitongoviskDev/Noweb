@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+public/assets/logo.png Noweb
+Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + TailwindCSS, que consome a API ViaCEP para busca e preenchimento automático de informações de endereço a partir de um CEP.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologias utilizadas
+Vite – build rápido e leve
 
-Currently, two official plugins are available:
+React – biblioteca para construção de interfaces
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TypeScript – tipagem estática para JavaScript
 
-## Expanding the ESLint configuration
+TailwindCSS – estilização utilitária, modelo mobile-first
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React Icons – ícones prontos e customizáveis
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Axios – cliente HTTP para requisições à API
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+📥 Como rodar o projeto
+bash
+Copiar
+Editar
+# 1️⃣ Clonar o repositório
+git clone git@github.com:VitongoviskDev/Noweb.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 2️⃣ Entrar na pasta do projeto
+cd Noweb
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 3️⃣ Instalar dependências
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 4️⃣ Rodar o servidor de desenvolvimento
+npm run dev
+🌐 Acessando no navegador
+Após iniciar o projeto, abra no navegador:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+arduino
+Copiar
+Editar
+http://localhost:5173
+📌 Sobre a aplicação
+Esta página foi construída com o conceito mobile-first, garantindo uma experiência fluida e responsiva.
+Funcionalidades principais:
+
+🔍 Busca de endereços pelo CEP via API ViaCEP
+
+📝 Preenchimento automático dos campos com possibilidade de edição
+
+📱 Layout otimizado para dispositivos móveis
+
+🎨 Estilização rápida e consistente com TailwindCSS
+
+📷 Prévia
