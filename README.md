@@ -1,4 +1,5 @@
 ![Logo noweb](public/logoIcon.png ) Noweb
+
 Uma aplicação mobile-first desenvolvida com Vite + React + TypeScript + TailwindCSS, que consome a API ViaCEP para busca e preenchimento automático de informações de endereço a partir de um CEP.
 
 🚀 Tecnologias utilizadas
