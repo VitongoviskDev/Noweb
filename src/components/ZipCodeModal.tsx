@@ -38,7 +38,8 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
     const fetchZipCodeApi = async (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
 
-        saveZipcode(zipCode);
+        localStorage.setItem('zipCode', zipCode);
+
         const zip = zipCode.replace('-', '');
 
         try {
@@ -60,13 +61,6 @@ const ZipCodeModal: React.FC<ZipCodeModalProps> = ({ onCloseModal }) => {
             ]);
         } catch (error) {
             setError('O cep digitado é inválido');
-        }
-    };
-
-    const saveZipcode = (value: string) => {
-        const savedZip = localStorage.getItem('zipCode');
-        if (!savedZip) {
-            localStorage.setItem('zipCode', value);
         }
     };
 
