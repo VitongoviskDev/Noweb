@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ZipCodeInput from './ZipCodeInput';
 import { IoClose, IoSearchOutline } from 'react-icons/io5';
 import axios from 'axios';
