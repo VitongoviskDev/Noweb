@@ -45,8 +45,8 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 modalShown &&
                 <ZipCodeModal onCloseModal={handleCloseModal} />
             }
-            <div className="flex justify-between items-center gap-4 px-4 py-6 h-26 w-full max-w-[96rem]">
-                <ImageContainer img={logo} object="contain" className="h-8 sm:h-full w-fit" />
+            <div className="flex justify-between items-center gap-4 px-4 py-6 h-18 md:h-20 xl:h-26 w-full max-w-[96rem]">
+                <ImageContainer img={logo} object="contain" className="h-full w-fit" />
                 <ul className=" hidden lg:flex xl:justify-center gap-12 max-w-2xl">
                     {links.map((link, index) => (
                         <DesktopNavButton key={index} link={link} setSubmenu={setSubmenu} currentSubmenu={submenu} />
